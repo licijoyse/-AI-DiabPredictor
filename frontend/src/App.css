@@ -1,0 +1,222 @@
+/* ---------- GLOBAL RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #f0f4ff, #ffffff);
+font-family: 'Quicksand', sans-serif;
+  color: #1a1a1a;
+  scroll-behavior: smooth;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero-section {
+  background: linear-gradient(135deg, #e0f7fa, #fefefe);
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #007bff;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 600px;
+  margin: 15px auto 30px;
+}
+
+.hero-section .btn {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background: linear-gradient(to right, #0056b3, #003e8a);
+}
+
+/* ---------- FEATURES SECTION ---------- */
+.features-section {
+  padding: 60px 20px;
+  background: #f9fcff;
+  text-align: center;
+}
+
+.features-section h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.features-section h5 {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.features-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ---------- FORM SECTION ---------- */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.card {
+  max-width: 750px;
+  width: 100%;
+  border-radius: 18px;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* ---------- FORM INPUTS ---------- */
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  border-radius: 10px;
+  padding: 12px 15px;
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-success {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+}
+
+.btn-success:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* ---------- ALERT ---------- */
+.alert {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #e6f7ff;
+  color: #007bff;
+  border-left: 6px solid #007bff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #111;
+  color: #aaa;
+  padding: 25px 0;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  .card {
+    padding: 25px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .features-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  input {
+    font-size: 0.95rem;
+  }
+}
+/* 📄 Background image section for the form */
+.form-section {
+  background: url('https://media.istockphoto.com/id/2194838611/photo/close-up-of-doctor-holds-tablet-while-points-pen-with-human-hologram-remedial.jpg?s=612x612&w=0&k=20&c=r_FR31SSZAVqXLZJkFbdh0eCAVc_CLs_Q9iGKutnEFI=');
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: Add a soft overlay for better text readability */
+.form-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(153, 147, 147, 0.85); /* Light overlay */
+  z-index: -1;
+}
+
+.bk{
+  background-color: #b8ded1;
+}
